@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>Formulir Anggota Perpustakaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url("background\ 2\ hitam.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .form-container {
+            background-color: rgba(46, 46, 70, 0.8);
+            border: 2px dashed white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 50px auto;
+            color: rgb(15, 7, 7);
+        }
+        .form-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .form-select, .form-textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .form-radio, .form-checkbox {
+            margin-right: 10px;
+        }
+        .form-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-button {
+            background-color: #4A90E2;
+            color: rgb(250, 245, 245);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    .label{
+        color: aliceblue;
+    }
+    .form-container label{
+        color: #eef1f5;
+    }
+    .makanan {
+        color: aliceblue;
+    }
+    .genre {
+        color: aliceblue;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title label">Formulir Anggota Perpustakaan</div>
+        <form>
+           <label>Nama</label>
+            <input type="text" class="form-input" placeholder="ketikan nama kamu">
+            
+            
+           <label>Kota Lahir</label>
+            <input type="text" class="form-input" placeholder="ketikan dan/atau pilih nama kota lahir kamu">
+            
+            <label>Tanggal Lahir</label>
+            <input type="date" class="form-input" placeholder="mm/dd/yyyy">
+            
+            <label>Gender</label><br>
+           <div class="genre"> <input type="radio" class="form-radio" name="gender" value="pria"> Pria
+            <input type="radio" class="form-radio" name="gender" value="wanita"> Wanita<br></div>
+            
+            <label>No Telepon</label>
+            <input type="text" class="form-input" placeholder="ketikan no telepon kamu">
+            
+            <label>Makanan Favorit</label><br>
+            <div class="makanan"><input type="checkbox"class="form-checkbox" name="makanan"class="nasi_goreng"> Nasi goreng
+            <input type="checkbox" class="form-checkbox" name="makanan" value="mie_goreng"> Mie goreng<br></div>
+            
+            <label>Agama</label>
+            <select class="form-select">
+                <option>Pilih</option> <option>Islam</option> <option>Kristen</option> <option>Khtolik</option> <option>Hindu</option> <option>Budha</option> <option>Konghucu</option>
+            </select>
+            
+            <label>Alamat</label>
+            <textarea class="form-textarea" rows="4" placeholder="ketikan alamat kamu"></textarea>
+            
+            <div class="form-buttons">
+                <button type="reset" class="form-button">Clear</button>
+                <button type="submit" class="form-button">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
